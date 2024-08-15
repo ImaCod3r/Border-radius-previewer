@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-radius Previewer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Border-radius previewer</h1>
+    </header>
+
+    <div class="app">
+
+        <div class="container">
+            <form id="values-form">
+
+                <div class="params">
+                    <label for="type">Selecione o tipo</label>
+                    <select id="type" name="type">
+                        <option value="px">Pixels (px)</option>
+                        <option value="in">Polegadas (in)</option>
+                        <option value="%">Porcentangem (%)</option>
+                        <option value="pc">Paica (pc)</option>
+                        <option value="cm">Centímetros (cm)</option>
+                        <option value="pt">Pontos (pt)</option>
+                    </select>
+                </div>
+
+                <div class="input-wrapper">
+                    <input type="number" min="0" value="0" name="topLeft">
+                    <input type="number" min="0" value="0" name="topRight">
+                </div>
+
+                <div id="rectangle"></div>
+
+                <div class="input-wrapper">
+                    <input type="number" min="0" value="0" name="bottomLeft">
+                    <input type="number" min="0" value="0" name="bottomRight">
+                </div>
+
+                <br>
+
+                <div class="input-wrapper">
+                    <label for="background">Escolha uma cor</label>
+                    <input type="color" name="background" id="background">
+                </div>
+
+            </form>
+
+            <div class="css-box">
+                <textarea id="result"></textarea>
+            </div>
+
+            <div class="controls">
+                <button type="submit" form="values-form">
+                    Gerar
+                </button>
+
+                <button id="copy">
+                    Copiar
+                </button>
+
+                <button type="reset" form="values-form">
+                    Resetar
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Feito com ❤️ por <a href="https://www.github.com/imacod3r">imacod3r</a></p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
