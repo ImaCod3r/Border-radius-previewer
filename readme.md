@@ -22,8 +22,8 @@ Feito com ❤️ por imacod3r
 ### Licença
 Este projeto é licenciado sob a licença MIT.
 
-Contribuição
+### Contribuição
 Se você deseja contribuir para este projeto, basta criar um fork do repositório e enviar um pull request com suas alterações.
 
-Contato
+### Contato
 Se você tiver alguma dúvida ou precisar de ajuda, não hesite em entrar em contato comigo através do meu perfil do GitHub.
